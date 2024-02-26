@@ -1,9 +1,15 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 .coin_display{
     font-size: 50px;
-    background-color: chartreuse; 
+    background: radial-gradient(#c0c0c0 10%, #939393);
     height: 500px;
     width: 500px; 
     border-radius: 50%; 
+    border:5px solid black;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -17,19 +23,19 @@
     height: 500px;
     width: 500px; 
     border-radius: 50%; 
-    animation: example 1200ms ;
-    animation-direction: alternate;
-    transition: 1000ms ease;
+    animation: example 1500ms ;
+    transition: 1200ms ease;
 }
 
 
 .coin_display2{
     font-size: 50px;
-    background-color: rgb(212, 127, 0); 
+    background: radial-gradient(#c0c0c0 10%, #939393);
     height: 500px;
     width: 500px; 
     border-radius: 50%; 
     display: flex;
+    border:5px solid black;
     justify-content: center;
     align-items: center;
 } 
@@ -42,28 +48,21 @@
     gap: 50px;
     margin: 50px;
 } 
-button{
-    font-size: 30px;
-    padding: 20px; 
-    border: none; 
-    background: linear-gradient(rgba(255, 255, 255, 0.026),rgb(84, 23, 239));
-    cursor: pointer;
-    transition: 5000ms ease-in-out;
-}
-button:hover{
+
+button {
     font-size: 30px;
     padding: 20px; 
     border: none; 
     cursor: pointer;
-    background: linear-gradient(rgb(84, 23, 239) 0%, rgba(255, 255, 255, 0.026) 100%);
-    transition: 5000ms ease-in-out;
 }
 
 @keyframes example {
     from {scale: 1;
+        background:radial-gradient(#8e8e8e 10%, #555555);
         rotate: 0 1 0 0deg;}
-    to {scale:0.5;
-        rotate: 0 1 0 360deg;}
+    to {scale:0.2;
+        background:radial-gradient(#8e8e8e 10%, #555555);
+        rotate: 0 1 0 720deg;}
   }
 
 
